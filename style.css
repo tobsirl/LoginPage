@@ -83,7 +83,78 @@ h6 {
   width: 100%;
 }
 
+#signin .secondary-btn,
+.or,
+.links {
+  width: 60%;
+}
 
+#signin .links a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#signin .or {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.2rem;
+  align-items: center;
+}
+
+#signin .or .bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #000;
+}
+
+#signin .or span {
+  color: #000;
+  padding: 0 0.8rem;
+}
+
+/* Showcase */
+#showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('img/rs2015.jpg') no-repeat center center / cover;
+  height: 100vh;
+  text-align: center;
+
+}
+
+#showcase .showcase-text {
+  font-size: 3rem;
+  width: 100%;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+  width: 60%;
+  margin: auto;
+
+}
+
+/* Footer */
+#main-footer {
+  color: #000;
+  text-align: center;
+  font-size: 0.8rem;
+  max-width: 80%;
+  padding-top: 2rem;
+}
+
+#main-footer a {
+  color: #f96816;
+  text-decoration: underline;
+}
 
 /* Button */
 .primary-btn {
@@ -133,5 +204,31 @@ h6 {
 
   #right {
     flex: 6;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  #right {
+    display: none;
+  }
+
+  #left {
+    justify-content: start;
+    margin-top: 4vh;
+  }
+
+  #signin .logo {
+    margin-bottom: 2vh;
+  }
+
+  #sign .text-input {
+    margin-bottom: 0.7rem;
+  }
+
+  #main-footer {
+    padding: 1rem;
   }
 }
